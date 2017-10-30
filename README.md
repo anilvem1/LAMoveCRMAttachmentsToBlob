@@ -4,13 +4,11 @@ Move Dynamics 365 CE attachments (Notes attachments / Email Activity Mime attach
 As a customer, I would like to move all my existing CRM attachments stored in Notes / Emails to an Azure Blob as a one time / continuous setup.
 
 ## Move CRM Note Attachments to Azure Blob:
-
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappsdeployment%2Fhttps://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappsdeployment%2FLA-MoveCRMNote-AttachmentsToBlob.json" target="_blank">
-<img src="http://azuredeploy.net/deploybutton.png"/>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappstemplates%2FLA-MoveCRMNote-AttachmentsToBlob.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
 ## Move CRM Email Attachments to Azure Blob:
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappsdeployment%2Fhttps://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappsdeployment%2FLA-MoveCRMNote-AttachmentsToBlob.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappstemplates%2FLA-MoveCRMEmail-AttachmentsToBlob.json" target="_blank">
 <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
