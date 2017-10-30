@@ -1,7 +1,10 @@
 # LAMoveCRMAttachmentsToBlob
-## Problem Statement: 
+
+## Description:
 Move Dynamics 365 CE attachments (Notes attachments / Email Activity Mime attachments) to Azure Blob storage using Azure Logic Apps.
 As a customer, I would like to move all my existing CRM attachments stored in Notes / Emails to an Azure Blob as a one time / continuous setup.
+
+These Logic Apps can be used together with the Attachment Management solution available in <a href="https://appsource.microsoft.com/en-us/product/dynamics-365/microsoft_labs.96257e65-dbbe-43db-b775-77cf1609530c">AppSource</a>.
 
 ## Move CRM Note Attachments to Azure Blob:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappstemplates%2FLA-MoveCRMNote-AttachmentsToBlob.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/>
