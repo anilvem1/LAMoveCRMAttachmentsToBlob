@@ -1,5 +1,6 @@
 # LAMoveCRMAttachmentsToBlob
 Move Dynamics 365 Customer Engagement aka CRM Online attachments (Notes attachments / Email Activity Mime attachments) to Azure Blob storage using Azure Logic Apps.
+It would be ideal to test run the these Logic Apps in your pre - production environments before using in your production environment.
 
 ## Description:
 As a customer, I would like to move all my existing CRM attachments stored in Notes / Emails to an Azure Blob as a one time / continuous setup.
@@ -16,9 +17,10 @@ These Logic Apps can be used together with the Attachment Management solution av
 </a>
 
 ## Pre requisites:
-Create the containers in Azure Blob storage
+Create the below containers in Azure Blob storage
 1) notesattachments
 2) emailattachments
+Note: User can have his own container names updated in Logic Apps via Code view
 
 ## Deployment steps
 
@@ -35,7 +37,9 @@ You can click the "Deploy to Azure" button at the beginning of this document.
 ## Usage
 
 Once the deployment is completed, you can perform below steps to test your Logic App:
-- Open the Logic App --> API Connections
+- Open the Logic App -> API Connections
 - Open CRM API connection -> Click Authorize and save
 - Run the Logic App and validate the attachments from CRM to Azure Blob
+- Open Logic App in Code View -> find the text 'CRMORGUNIQUENAME_TOBE_REPLACED' and replace it with your CRM organization unique name
 - Recurrence: Change the recurrence schedule of Logic App as per your requirement to make it schedule job
+- Note: By default, Logic App moves top 2 attachment records ("$top": 2) to Azure Blob. Please update the Logic App in code view with the number you wanted
