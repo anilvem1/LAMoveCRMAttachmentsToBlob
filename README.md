@@ -43,3 +43,4 @@ Once the deployment is completed, you can perform below steps to test your Logic
 - Open Logic App in Code View -> find the text 'CRMORGUNIQUENAME_TOBE_REPLACED' and replace it with your CRM organization unique name
 - Recurrence: Change the recurrence schedule of Logic App as per your requirement to make it schedule job
 - Note: By default, Logic App moves top 2 attachment records ("$top": 2) to Azure Blob. Please update the Logic App in code view with the number you wanted
+## Important: If you have Attachment Management solution installed from AppSource, please disable the RetrieveMultiple / Update plugin steps on Note & ActivityMimeAttachment entities to avoid any performance issues.
