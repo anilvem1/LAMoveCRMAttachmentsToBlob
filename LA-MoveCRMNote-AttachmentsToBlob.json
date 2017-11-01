@@ -50,7 +50,7 @@
     },
     "dynamicscrmonline_1_Connection_DisplayName": {
       "type": "string",
-      "defaultValue": "anvemula@microsoft.com"
+      "defaultValue": "abc@abc.com"
     },
     "azureblob_1_Connection_Name": {
       "type": "string",
@@ -65,7 +65,7 @@
       "metadata": {
         "description": "Name of the storage account the connector should use."
       },
-      "defaultValue": "anvemulatestsa1"
+      "defaultValue": "storageaccountname"
     },
     "azureblob_1_accessKey": {
       "type": "securestring",
@@ -97,7 +97,7 @@
                   }
                 },
                 "method": "get",
-                "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('salesquotaenabler.crm'))}/tables/@{encodeURIComponent(encodeURIComponent('annotations'))}/items",
+                "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('CRMORGUNIQUENAME_TOBE_REPLACED.crm'))}/tables/@{encodeURIComponent(encodeURIComponent('annotations'))}/items",
                 "queries": {
                   "$filter": "isdocument eq true and documentbody ne null and filename ne 'theme.css' and filename ne 'bootstrap.min.css'",
                   "$orderby": "modifiedon asc",
@@ -143,7 +143,7 @@
                       }
                     },
                     "method": "patch",
-                    "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('salesquotaenabler.crm'))}/tables/@{encodeURIComponent(encodeURIComponent('annotations'))}/items/@{encodeURIComponent(encodeURIComponent(items('For_each')?['annotationid']))}",
+                    "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('CRMORGUNIQUENAME_TOBE_REPLACED.crm'))}/tables/@{encodeURIComponent(encodeURIComponent('annotations'))}/items/@{encodeURIComponent(encodeURIComponent(items('For_each')?['annotationid']))}",
                     "body": {
                       "documentbody": null,
                       "isdocument": true,
