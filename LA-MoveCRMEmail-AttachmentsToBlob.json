@@ -123,7 +123,7 @@
                     "path": "/datasets/default/files",
                     "queries": {
                       "folderPath": "/EmailAttachments",
-                      "name": "@{concat(concat(json(items('For_each')?['attachmentid'])['filename'], '_'), json(items('For_each')?['attachmentid'])['filename'])}"
+                      "name": "@{concat(concat(items('For_each')?['activitymimeattachmentid'], '_'), json(items('For_each')?['attachmentid'])['filename'])}"
                     },
                     "body": "@base64ToBinary(json(items('For_each')?['attachmentid'])['body'])"
                   },
