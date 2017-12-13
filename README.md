@@ -16,6 +16,14 @@ These Logic Apps can be used together with the Attachment Management solution av
 <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
+## Move CRM Email Attachments By CreatedOn to Azure Blob:
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fccrmappsource.blob.core.windows.net%2Flogicappstemplates%2FLA-MoveCRMEmailByDate-AttachmentsToBlob.json" target="_blank">
+<img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+
+#### Note:
+To update the start and end dates for CreatedOn for email records, go to Logic App Code view -> Line 111 -> "$filter": "attachmentcount gt 0 and createdon gt 2017-01-01T00:00:00Z# and createdon lt 2018-01-01T00:00:00Z",
+
 ## Pre requisites:
 Create the below containers in Azure Blob storage
 1) notesattachments
@@ -43,4 +51,6 @@ Once the deployment is completed, you can perform below steps to test your Logic
 - Open Logic App in Code View -> find the text 'CRMORGUNIQUENAME_TOBE_REPLACED' and replace it with your CRM organization unique name
 - Recurrence: Change the recurrence schedule of Logic App as per your requirement to make it schedule job
 - Note: By default, Logic App moves top 2 attachment records ("$top": 2) to Azure Blob. Please update the Logic App in code view with the number you wanted
-## Important: If you have Attachment Management solution installed from AppSource, please disable the RetrieveMultiple / Update plugin steps on Note & ActivityMimeAttachment entities to avoid any performance issues.
+
+## Important: 
+If you have Attachment Management solution installed from AppSource, please disable the RetrieveMultiple / Update plugin steps on Note & ActivityMimeAttachment entities to avoid any performance issues.
