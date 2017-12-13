@@ -22,7 +22,7 @@ These Logic Apps can be used together with the Attachment Management solution av
 </a>
 
 #### Note:
-To update the start and end dates for CreatedOn for email records, go to Logic App Code view -> Line 111 -> "$filter": "attachmentcount gt 0 and createdon gt 2017-01-01T00:00:00Z# and createdon lt 2018-01-01T00:00:00Z",
+To update the start and end dates for CreatedOn for email records, go to Logic App Code view -> Line 111 -> "$filter": "attachmentcount gt 0 and createdon gt 2017-01-01T00:00:00Z and createdon lt 2018-01-01T00:00:00Z",
 
 ## Pre requisites:
 Create the below containers in Azure Blob storage
