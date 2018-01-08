@@ -1,4 +1,4 @@
-# LAMoveCRMAttachmentsToBlob
+# Movie file attachments from Dynamics 365 to Azure Blob
 Move Dynamics 365 Customer Engagement aka CRM Online attachments (Notes attachments / Email Activity Mime attachments) to Azure Blob storage using Azure Logic Apps.
 It would be ideal to test run the these Logic Apps in your pre - production environments before using in your production environment.
 
@@ -28,7 +28,7 @@ To update the start and end dates for CreatedOn for email records, go to Logic A
 Create the below containers in Azure Blob storage
 1) notesattachments
 2) emailattachments
-Note: User can have his own container names updated in Logic Apps via Code view
+- Note: User can have his own container names updated in Logic Apps via Code view
 
 ## Deployment steps
 
