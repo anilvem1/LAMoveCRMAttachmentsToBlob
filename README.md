@@ -19,9 +19,9 @@ These Logic Apps can be used together with the Attachment Management solution av
 <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-### Note: If CRM version is 9.0 and later, please do the below
+#### Note: If CRM version is 9.0 and later, please do the below
 
-- After successful deployment, open Logic App Code view
+- After successful deployment, open Logic App (LA-MoveCRMEmail-AttachmentsToBlob) Code view
 - Replace the text 'json(items('For_each')?['attachmentid'])' with this value 'items('For_each')?['attachmentid']'
 - Save Logic App defintion
 
@@ -31,9 +31,9 @@ These Logic Apps can be used together with the Attachment Management solution av
 <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-### Note: If CRM version is 9.0 and later, please do the below
+#### Note: If CRM version is 9.0 and later, please do the below
 
-- After successful deployment, open Logic App Code view
+- After successful deployment, open Logic App (LA-MoveCRMEmailByDate-AttachmentsToBlob) Code view
 - Replace the text 'json(items('For_each')?['attachmentid'])' with this value 'items('For_each')?['attachmentid']'
 - Save Logic App defintion
 
